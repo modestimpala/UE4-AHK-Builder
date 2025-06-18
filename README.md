@@ -49,13 +49,14 @@ Configuration is saved automatically.
 
 Mod structure:
 
-/Content/Mods/MyMod/Label_MyMod
-/Content/Mods/MyMod/ModMap.umap
-/Content/Mods/MyMod/MapActor
-/Content/Mods/MyMod/ModActor
-/Content/Mods/MyMod/...
+- /Content/Mods/MyMod/Label_MyMod
+- /Content/Mods/MyMod/ModMap.umap
+- /Content/Mods/MyMod/MapActor
+- /Content/Mods/MyMod/ModActor
+- /Content/Mods/MyMod/...
 
 Create a dummy actor "MapActor" with an array variable for UObjects called "objs" or similar.
+
 In your Mod folder do Filters -> Tick All and add every asset from your mod folder EXCEPT the ModMap.umap and MapActor. Then open ModMap and place MapActor inside of the level. Save all.
 
 Configure build settings:
